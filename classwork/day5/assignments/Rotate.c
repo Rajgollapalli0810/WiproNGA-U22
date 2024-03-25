@@ -10,9 +10,9 @@ void reverse(int arr[],int start,int end){
     }
 }
 
-void rttKth(int arr[],int n,int k){
-    int i;
-    for(i=0;i<n;i+=k){
+void rotateKth(int arr[],int n,int k){
+    
+    for(int i=0;i<n;i+=k){
         int start =i,end =i+k-1;
         if(end >=n) end = n-1;
         reverse(arr,start,end);
@@ -30,9 +30,9 @@ int main(){
     for(i=0;i<n;i++)
     scanf("%d",&arr[i]);
 
-    printf("k= ");
+    printf("enter the value of k= ");
     scanf("%d",&k);
-    rttKth(arr,n,k);
+    rotateKth(arr,n,k);
 
     printf("output:");
     for(i=0;i<n;i++)

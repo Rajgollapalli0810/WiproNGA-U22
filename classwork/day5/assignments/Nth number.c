@@ -27,7 +27,7 @@ int findNthPrimedigitnumber(int n){
 }
 
 int main(){
-    int n,t,Nthnumber;
+    int n,t,Nthnumber4;
     printf("enter the number of test cases:");
     scanf("%d",&t);
 
